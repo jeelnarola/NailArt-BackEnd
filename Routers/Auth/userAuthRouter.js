@@ -1,8 +1,8 @@
 const { Router } = require("express");
-const router = Router();
+const userRouter = Router();
 
-router.get("/", (req, res) => {
+userRouter.get("/signup", (req, res) => {
   res.send({ msg: "hello" });
 });
 
-module.exports = router;
+module.exports = userRouter;

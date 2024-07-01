@@ -1,8 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const dataBase = require("./Configs/dataBase");
-const authRouter = require("./Routers/Auth/userAuthRouter");
-const router = require("./Routers/Auth/userAuthRouter");
+const router = require("./Routers/router");
 const app = express();
 require("dotenv").config();
 let { PORT } = process.env;
