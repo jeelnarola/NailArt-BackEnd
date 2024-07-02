@@ -5,7 +5,11 @@ const userSignup = new mongoose.Schema({
   secondName: String,
   email: String,
   password: String,
+  role:{type:String,
+    enum:['user','admin'],
+    default:'user',
+  }
 });
 
-const userModel = mongoose.model("authSignup", userSignup);
+const userModel = mongoose.model("allUser", userSignup);
 module.exports = userModel;
